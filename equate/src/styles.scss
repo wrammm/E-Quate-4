@@ -1,1 +1,193 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Luckiest+Guy|Michroma|Orbitron|Titan+One&display=swap');
+#gameCont {
+  background-color: darkseagreen;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#landingPage {
+  background-image: linear-gradient(lightgreen, lightblue); 
+  height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+#landingButton1 {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+#landingButton2 {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+h1{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+h2{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.gridItem {
+    padding-top: 24px !important;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background: linear-gradient(90deg, lightblue 50%, lightgreen 50%);
+    border: 2px solid black;
+}
+
+h1{font-family: 'Orbitron';}
+
+.tileCont1 {
+    background-color: lightblue;
+    border: 2px solid black;
+    font-size: 40px;
+}
+
+.tileCont2 {
+    border: 2px solid black;
+    background-color: lightgreen;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .gridItem {
+      font-size: 20px;
+    }
+    .tileCont1 {
+        font-size: 20px;
+      }
+    .tileCont2 {
+        font-size: 20px;
+    }
+    #demoGif {
+        width: 90%;
+    }
+  }
+
+  .settingsSubmitButton {
+    background-color: lightgreen; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  #fullScreenIcon{
+    position: absolute; 
+    top: 5px; 
+    left:5px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .winButton {
+    background-color: lightgreen; /* Green */
+    border: none;
+    color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: lightgreen;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px lightgreen;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
